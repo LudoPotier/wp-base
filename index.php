@@ -11,13 +11,16 @@
  *
  * @var bool
  */
-define('WP_USE_THEMES', true);
+define('WP_USE_THEMES',   true);
+define('WP_CONTENT_DIR', dirname(__FILE__) . '/wp-content');
+define('WP_PLUGIN_DIR',  dirname(__FILE__) . '/wp-content/plugins');
+define('WP_CONTENT_URL', '/wp-content');
+define('WP_PLUGIN_URL',  '/wp-content/plugins');
+
+define('PLUGINDIR',      dirname(__FILE__) . '/wp-content/plugins');
+define('UPLOADS',        'wp-content/media');
+
+register_theme_directory(WP_CONTENT_DIR . '/themes'); 
 
 /** Loads the WordPress Environment and Template */
 require( dirname( __FILE__ ) . '/wp/wp-blog-header.php' );
-
-
-define( 'WP_CONTENT_DIR', dirname(__FILE__) . '/wp-content' );
-
-
-define( 'WP_CONTENT_URL', '/wp-content' );

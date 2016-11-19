@@ -1,4 +1,6 @@
 {
+    "name": "test/xp",
+    "description": "WordPress.",
     "require": {
         "php": ">=5.4",
         "johnpbloch/wordpress": "4.6.1"
