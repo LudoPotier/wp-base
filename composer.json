@@ -1,6 +1,6 @@
 {
-    "name": "test/xp",
-    "description": "WordPress.",
+    "name": "lp-dev/wp-base",
+    "description": "WordPress based project",
     "require": {
         "php": ">=5.4",
         "johnpbloch/wordpress": "4.6.1"
